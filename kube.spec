@@ -10,5 +10,5 @@
      {tar_cmd,{os,cmd,["tar -xvf kube/kube-0.1.0.tar.gz -C kube "]}},
      {start_cmd,{os,cmd,["./kube/bin/kube daemon"]}},
      {num, 1},
-     {affinity,[all_hosts]}    %    {affinity,["c201","c201"]}, {affinity,[all_hosts]}    
+     {affinity,[all_hosts]} 
  ]}.

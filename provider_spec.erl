@@ -35,7 +35,7 @@ check([{ok,[{provider_spec,_Id,Info}]}|T])->
     true=proplists:is_defined(cookie,Info),
     true=proplists:is_defined(clone_cmd,Info),
     true=proplists:is_defined(tar_cmd,Info),
-    true=proplists:is_defined(star_cmd,Info),
+    true=proplists:is_defined(start_cmd,Info),
     true=proplists:is_defined(num,Info),
     true=proplists:is_defined(affinity,Info),
 

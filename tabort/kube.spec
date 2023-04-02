@@ -8,7 +8,7 @@
      {tar_file,"kube-0.1.0.tar.gz"},
      {node_name,"kube"},
      {cookie,"a_cookie"},
-     {pa_args," -pa kube/ebin "},
+     {pa_args," -pa kube/lib/*/ebin "},
      {git_path,"https://github.com/joq62/kube.git"},
      {tar_cmd,"tar -xvf kube/kube-0.1.0.tar.gz -C kube "},
      {start_cmd,{application,start,[kube],20000}},

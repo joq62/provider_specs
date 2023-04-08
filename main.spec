@@ -13,5 +13,5 @@
      {tar_cmd,"tar -xvf main/main-0.1.0.tar.gz -C main "},
      {start_cmd,{application,start,[main],20000}},
      {num, 1},
-     {affinity,["c201"]}       
+     {affinity,[all_hosts]}       
  ]}.

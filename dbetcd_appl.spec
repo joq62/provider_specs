@@ -3,7 +3,7 @@
      {appl_name,"dbetcd_appl"},
      {vsn,"0.1.0"},
      {app_name,"dbetcd_appl"},
-     {app,dbetcd_appl},
+     {app,dbetcd},
      {dir,"dbetcd_appl"},
      {tar_file,"dbetcd_appl-0.1.0.tar.gz"},
      {node_name,"dbetcd_appl"},

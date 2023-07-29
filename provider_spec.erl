@@ -9,7 +9,7 @@
 
 
 -define(Dir,".").
--define(FileExt,".spec").
+-define(FileExt,".provider").
 
 %% --------------------------------------------------------------------
 %% Function: available_hosts()
@@ -24,24 +24,14 @@ start()->
 
 check([])->
     io:format("Success, OK ! ~n");
-check([{ok,[{provider_spec,_Id,Info}]}|T])->
+check([{ok,[{provider_spec,Info}]}|T])->
     io:format("Checking ~p~n",[Info]),
   
     true=proplists:is_defined(appl_name,Info),
     true=proplists:is_defined(vsn,Info),
-    true=proplists:is_defined(app_name,Info),
     true=proplists:is_defined(app,Info),
-    true=proplists:is_defined(dir,Info),
-    true=proplists:is_defined(tar_file,Info),
-    true=proplists:is_defined(node_name,Info),
-    true=proplists:is_defined(cookie,Info),
-    true=proplists:is_defined(pa_args,Info),
+    true=proplists:is_defined(erl_args,Info),
     true=proplists:is_defined(git_path,Info),
-    true=proplists:is_defined(tar_cmd,Info),
-    true=proplists:is_defined(start_cmd,Info),
-    true=proplists:is_defined(num,Info),
-    true=proplists:is_defined(affinity,Info),
-
 
     check(T).
 

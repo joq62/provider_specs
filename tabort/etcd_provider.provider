@@ -1,0 +1,11 @@
+{provider_spec,
+ [
+     {appl_name,"etcd_provider"},
+     {vsn,"0.1.0"},
+     {app,etcd_provider}, 
+     {erl_args," "},
+     {git_path,"https://github.com/joq62/etcd_provider.git"}
+
+]
+}.
+     

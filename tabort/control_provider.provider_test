@@ -1,0 +1,11 @@
+{provider_spec,
+ [
+     {appl_name,"control_provider"},
+     {vsn,"0.1.0"},
+     {app,control_provider},
+     {local_resources,[{control,control},{etcd,etcd},{log,log}]},
+     {target_types,[etcd,log]},
+     {erl_args," "},
+     {git_path,"https://github.com/joq62/control_provider.git"}
+ ]
+}.

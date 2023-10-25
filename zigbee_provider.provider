@@ -1,0 +1,9 @@
+{provider_spec,
+ [
+     {appl_name,"zigbee_provider"},
+     {vsn,"0.1.0"},
+     {app,zigbee_provider}, 
+     {erl_args," "},
+     {git_path,"https://github.com/joq62/zigbee_provider.git"}
+ ]
+}.
